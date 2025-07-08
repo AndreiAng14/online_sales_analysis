@@ -12,3 +12,13 @@ class ProductManager:
         
     def average(self):
         print(f'Valoarea totală a inventarului este de {sum(product.price * product.quantity for product in self.products):.2f}$.')
+
+    def remove_by_name(self,name):
+        for p in self.products:
+            if name  in p.name:
+                self.products.remove(p)
+                print(f'Produsul, {name}, a fost eliminat cu succes!')
+                break
+        else:
+            print(f'{name} nu este un numde valid!')
+               

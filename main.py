@@ -22,7 +22,13 @@ def show_products():
 def show_total():
     print('')
     product_manager.average()
-    
+
+def remove_product(name):
+    print('')
+    product_manager.remove_by_name(name)
+
 add_product(products)
-show_products()
-show_total()
+# show_products()
+# show_total()
+remove_product()
+
