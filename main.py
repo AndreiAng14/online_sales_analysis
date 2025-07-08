@@ -1,7 +1,10 @@
 from product_manager import ProductManager
 from product import Product
+from cart import Cart
+import random
 
 product_manager=ProductManager()
+cart=Cart()
 
 products=[
     Product('Laptop Gaming Asus',2_3455.56,12),
