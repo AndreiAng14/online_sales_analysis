@@ -23,5 +23,5 @@ def remove_product(name):
     product_manager.remove_by_name(name)
 
 add_product(products)
-remove_product()
+remove_product('Tastatura Logitech')
 
